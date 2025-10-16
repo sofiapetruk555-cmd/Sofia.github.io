@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html lang="uk">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>20 котиків та їхні історії</title>
+
+<style>
+         ul{
+            list-style: none;
+            color: rgb(196, 138, 250);
+            background-color:  pink;
+            display: flex;
+            justify-content: space-around;
+             text-align: center;
+             padding: 0;
+            margin: 0;
+        }
+        a{
+             list-style: none;
+             text-decoration: none;
+             padding: 20px;
+             display: block;
+            
+        }
+        a:hover{
+            color: rgb(198, 36, 68);
+        }
+        .q ul{
+              flex-direction: column;
+              position: absolute;
+              width: 100%;
+              display: none;
+              z-index: 2;
+        }
+        .q{
+              position: relative;
+              
+            
+        }
+        li{
+            flex-grow: 1;
+        }
+        .q:hover ul{
+            display: flex;
+        }
+
+    body {
+
+        font-family: Arial, sans-serif;
+
+        background-color: #c3c9fd;
+
+        text-align: center;
+
+        padding: 0;
+        margin: 0;
+
+    }
+
+    img{
+        width: 200px;
+        height: 200px;
+        
+    }
+
+    h1 {
+
+        color: #f88787;
+
+        margin-bottom: 30px;
+
+    }
+
+
+
+    .cat-container {
+
+        display: inline-block;
+
+        margin: 15px;
+
+        position: relative;
+
+        width: 300px;
+
+        cursor: pointer;
+
+        vertical-align: top;
+
+        border: 4px solid #f87ff2; 
+
+        border-radius: 15px;
+
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2); 
+
+        overflow: hidden;
+
+        transition: transform 0.3s, box-shadow 0.3s;
+
+    }
+
+
+
+    .cat-container:hover {
+
+        transform: scale(1.05);
+
+        box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+
+    }
+
+
+
+    .cat-image {
+
+        width: 100%;
+
+        display: block;
+
+        border-bottom: 3px solid #54cee4;
+
+    }
+
+
+
+    .cat-text {
+
+        position: absolute;
+
+        bottom: 0;
+
+        left: 0;
+
+        right: 0;
+
+        background-color: rgba(255, 255, 255, 0.95);
+
+        color: #333;
+
+        padding: 15px;
+
+        font-size: 14px;
+
+        line-height: 1.6;
+
+        opacity: 0;
+
+        transition: opacity 0.3s;
+
+        max-height: 300px;
+
+        overflow-y: auto;
+
+        text-align: justify;
+
+    }
+
+
+
+    .cat-container:hover .cat-text {
+
+        opacity: 1;
+
+    }
+
+    .moveImg {
+        animation: moveHor 10s linear infinite;
+        position: absolute;
+    }
+    @keyframes moveHor {
+        0% {
+            left: 50px;
+        }
+        100% {
+            left: 100%;
+        }
+    }
+    .moveImg{
+            width: 300px;
+        height: 300px;
+        border-radius: 50%;
+    }
+
+</style>
+
+</head>
+
+<body>
+    <ul>
+        <li><a hre="">Головна</a></li>
+        <li><a href="">Про нас</a></li>
+        <li><a href="">Контакти</a></li>
+        <li class="q"><a href="" >Послуги</a>
+            <ul>
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">4</a></li>
+        </ul></li>
+        
+        
+    </ul>
+
+    <h1>3 коти і одна киця та їхні історії</h1>
+
+
+
+
+    <div class="cat-container">
+
+        <img src="https://static.wikia.nocookie.net/threecats/images/f/f2/%D0%9A%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D0%BB%D1%8C%D0%BA%D0%B0.png/revision/latest?cb=20191003150554&path-prefix=ru" alt="Котик 1" class="cat-image">
+
+        <div class="cat-text">
+
+           карамелька лагідна і спокійна. Любить лежати на сонці, муркотіти та гратися з іграшками. Її шерсть м’яка, а очі уважні. Він приносить господарям маленькі подарунки і любить теплі ковдри.
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="cat-container">
+
+        <img src="https://static.wikia.nocookie.net/threecats/images/5/5a/%D0%9A%D0%BE%D1%80%D0%B6%D0%B8%D0%BA.png/revision/latest/smart/width/250/height/250?cb=20191003144906&path-prefix=ru
+        " alt="Котик 2" class="cat-image">
+
+        <div class="cat-text">
+
+            Коржик енергійний і грайливий, обожнює бігати за м’ячиком, ховатися в коробках та стрибати на полиці. Його муркотіння гучне і щире.
+
+        </div>
+
+    </div>
+
+
+
+    <div class="cat-container">
+
+        <img src="https://static.wikia.nocookie.net/threecats/images/c/c2/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BE%D1%82-0.png/revision/latest/smart/width/250/height/250?cb=20191003145157&path-prefix=ru" alt="Котик 3" class="cat-image">
+
+        <div class="cat-text">
+
+            Кампот  мудрий і спокійний. Проводить час на підвіконні, спостерігає за пташками, любить затишні куточки дому та сонячні промені.
+
+        </div>
+
+    </div>
+    <br>
+    <img src="https://png.klev.club/uploads/posts/2024-05/png-klev-club-9m3p-p-tri-kota-personazhi-png-9.png" alt="" class="moveImg">
+    
+</body>
+
+</html>
