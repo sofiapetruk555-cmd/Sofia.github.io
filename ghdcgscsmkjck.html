@@ -11,7 +11,44 @@
   <title>Країни світу</title>
 
   <style>
-
+ul{
+            list-style: none;
+            color: rgb(172, 226, 177);
+            background-color:  rgb(158, 255, 163);
+            display: flex;
+            justify-content: space-around;
+             text-align: center;
+             padding: 0;
+            margin: 0;
+        }
+        a{
+             list-style: none;
+             text-decoration: none;
+             padding: 20px;
+             display: block;
+            
+        }
+        a:hover{
+            color: rgb(198, 36, 68);
+        }
+        .q ul{
+              flex-direction: column;
+              position: absolute;
+              width: 100%;
+              display: none;
+              z-index: 2;
+        }
+        .q{
+              position: relative;
+              
+            
+        }
+        li{
+            flex-grow: 1;
+        }
+        .q:hover ul{
+            display: flex;
+        }
     body {
 
       font-family: "Segoe UI", sans-serif;
@@ -63,6 +100,23 @@
 <body>
 
 
+ <ul>
+        <li><a hre="">Головна</a></li>
+        <li><a href="">Про нас</a></li>
+        <li><a href="">Контакти</a></li>
+         <li><a href="">сайтик</a></li>
+        <li><a href="">аааааааа</a></li>
+        <li><a href="">історія</a></li>
+        <li class="q"><a href="" >Послуги</a>
+            <ul>
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">4</a></li>
+        </ul></li>
+        
+        
+    </ul>
 
   <div class="country">
 
